@@ -1,6 +1,6 @@
-def startApp(): 
+def startApp(show_menu = True): 
     from internal import menu 
-    menu.showMenu()
+    menu.showMenu(show_menu)
     option = input("Enter an option from the menu items: ")
 
 
@@ -28,7 +28,7 @@ def startApp():
 
                         print("Note saved successfully!")
                         
-                        startApp()
+                        startApp(False)
 
             elif option == "2": 
                 ## updating note 
